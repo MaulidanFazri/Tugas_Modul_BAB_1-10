@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Latihan BAB 3</title>
+
+        <style>
+            * {
+                font-family: 'League Spartan', sans-serif;
+            }
+
+            body {
+                background-color: azure;
+            }
+            .output {
+                border: none;
+                background-color: azure;
+            }
+
+            input[type="button"] {
+                background-color: #008CBA;
+                color: #FFFFFF;
+                border: none;
+                border-radius: 20px;
+                padding: 10px 20px;
+                cursor: pointer;
+                margin-right: 10px;
+                transition: background-color 0.3s;
+            }
+        
+            input[type="button"]:hover {
+              background-color: #005A80;
+            }
+
+            input[type="reset"] {
+                background-color: #FF0000;
+                color: #FFFFFF;
+                border: none;
+                border-radius: 20px;
+                padding: 10px 20px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            input[type="reset"]:hover {
+                background-color: #FF5555;
+            }
+
+            pre {
+                font-size: larger;
+            }
+
+            input[type="text"], select, option, input[type="radio"], textarea {
+                font-size:large;
+                border-radius: 5px;
+                padding: 5px;
+            }
+
+            .center-buttons {
+                text-align: center;
+                
+            }
+
+            .center-buttons input[type="button"], .center-buttons input[type="reset"] {
+                font-size: large;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script language="JavaScript" src="BAB 3.js"></script>
+        <form name="iform">
+            <br>
+            <p><pre>
+NIM                         : <input type="text" size="11" name="nim"><br>
+Nama Mahasiswa  : <input type="text" size="25" name="nama"><br>
+Jenis Kelamin         : <select name="sex" size="1">
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select><br>
+Agama                   : <select name="agama" size="1">
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Buddha">Buddha</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Konghuchu">Konghuchu</option>
+            </select><br>
+Status                    : <input type="radio" value="Kawin" name="status">Kawin<br>
+Jurusan di SV IPB  : <select name="jurusan" Size="1">
+                <option value ="Komunikasi Digital dan Media">Komunikasi Digital dan Media</option>
+                <option value ="Teknik dan Manajemen Lingkungan">Teknik dan Manajemen Lingkungan</option>
+                <option value ="Akuntansir">Akuntansi</option>
+                <option value ="Teknologi dan Manajemen Pembenihan Ikan">Teknologi dan Manajemen Pembenihan Ikan</option>
+                <option value ="Paramedik Veteriner">Paramedik Veteriner</option>
+                <option value ="Supervisor Jaminan Mutu Pangan">Supervisor Jaminan Mutu Pangan</option>
+                <option value ="Teknologi dan Manajemen Ternak">Teknologi dan Manajemen Ternak</option>
+                <option value ="Teknologi Rekayasa Perangkat Lunak ">Teknologi Rekayasa Perangkat Lunak</option>
+            </select><br>
+Komentar               : <textarea name="komentar" rows="5" cols="75"></textarea><br>
+            </pre></p>
+            <br>
+            <div class="center-buttons">
+            <input type="button" value="Kirim" onclick="tekan()">
+            <input type="reset" value="Ulang">
+            </div>
+
+
+            <br><br><br><br><br>
+            <h2><u>Mahasiswa Sekolah Vokasi Institut Pertanian Bogor</u></h2><br>
+            <p><pre>
+NIM                         : <input type="text" size="11" name="inim" class="output"><br>
+Nama Mahasiswa  : <input type="text" size="25" name="inama" class="output"><br>
+Jenis Kelamin         : <input type="text" size="11" name="isex" class="output"><br>
+Agama                   : <input type="text" size="11" name="iagama" class="output"><br>
+Status                    : <input type="text" size="11" name="istatus" class="output"><br>
+Jurusan                  : <input type="text" size="42" name="ijurusan" class="output"><br>
+Komentar               : <textarea name="ikomentar" rows="5" cols="75"></textarea>
+            </p></pre>
+        </form>
+    </body>
+</html>

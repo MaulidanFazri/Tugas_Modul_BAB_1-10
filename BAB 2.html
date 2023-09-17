@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <title>Latihan BAB 2</title>
+    <style>
+      body {
+        background-color: azure;
+      }
+      input[type="button"] {
+        background-color: #008cba;
+        color: #ffffff;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-right: 10px;
+        transition: background-color 0.3s;
+      }
+
+      input[type="button"]:hover {
+        background-color: #005a80;
+      }
+
+      input[type="reset"] {
+        background-color: #ff0000;
+        color: #ffffff;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      input[type="reset"]:hover {
+        background-color: #ff5555;
+      }
+
+      * {
+        font-family: "League Spartan", sans-serif;
+      }
+
+      input[type="text"] {
+        border: none;
+        font-size: medium;
+        background-color: azure;
+        transition: background-color 0.2s;
+      }
+
+      input[type="text"]:hover {
+        background-color: rgb(216, 236, 236);
+      }
+
+      pre {
+        font-size: larger;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <script language="JavaScript" src="BAB 2.js"></script>
+    </p>
+    <form name="iform">
+      <h1><br />Masukkan Data</h1>
+      <pre>
+Bilangan Pertama    : <input type="text" size="11" name="bilangan1">
+Bilangan Kedua        : <input type="text" size="11" name="bilangan2">
+            </pre>
+      <p>
+        <input type="button" value="Penjumlahan" onclick="jumlah()" />
+        <input type="button" value="Pengurangan" onclick="kurang()" />
+        <input type="button" value="Perkalian" onclick="kali()" />
+        <input type="button" value="Pembagian" onclick="bagi()" />
+        <br /><br />
+        <input type="reset" value="Ulang" class="styled-reset" />
+      </p>
+    </form>
+  </body>
+</html>

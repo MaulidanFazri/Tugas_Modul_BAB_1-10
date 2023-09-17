@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Latihan BAB 6.2</title>
+        <style>
+            body {
+                background-color:azure;
+            }
+            input[type="button"] {
+                background-color: #008CBA;
+                color: #FFFFFF;
+                border: none;
+                border-radius: 20px;
+                padding: 10px 20px;
+                cursor: pointer;
+                margin-right: 10px;
+                transition: background-color 0.3s;
+            }
+        
+            input[type="button"]:hover {
+              background-color: #005A80;
+            }
+
+            input[type="reset"] {
+                background-color: #FF0000;
+                color: #FFFFFF;
+                border: none;
+                border-radius: 20px;
+                padding: 10px 20px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            input[type="reset"]:hover {
+                background-color: #FF5555;
+            }
+
+            * {
+                font-family: 'League Spartan', sans-serif;
+            }
+
+            input[type="text"] {
+                border: none;
+                font-size:medium;
+                background-color:azure;
+                transition: background-color 0.2s;
+            }
+
+            input[type="text"]:hover {
+                background-color: rgb(216, 236, 236);
+            }
+
+            pre {
+                font-size: larger;
+            }
+          </style>
+    </head>
+    <body>
+        <p>
+        <script language="JavaScript" src="BAB 6_2.js"></script>
+        </p>
+        <form name ="fform">
+            <h1 align="center">Mencari Akar-akar dari Persamaan Kuadrat</h1>
+            <h1><br>Masukkan Data</h1>
+            <p>Rumus   : ax^2+bx+c=0</p>
+            <pre>
+Nilai a    : <input type="text" size="11" name="bila">
+Nilai b    : <input type="text" size="11" name="bilb">
+Nilai c    : <input type="text" size="11" name="bilc">
+            </pre>
+            <p>
+            <input type="button" value="Submit" onclick="hitung()">
+            <br><br>
+            <input type="reset" value="Reset">
+            </p>
+        </form>   
+    </body>
+</html>

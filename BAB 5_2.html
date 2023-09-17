@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <title>Latihan BAB 5.2</title>
+    <style>
+      body {
+        background-color: azure;
+      }
+
+      input[type="button"] {
+        background-color: #008cba;
+        color: #ffffff;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-right: 10px;
+        transition: background-color 0.3s;
+      }
+
+      input[type="button"]:hover {
+        background-color: #005a80;
+      }
+
+      input[type="reset"] {
+        background-color: #ff0000;
+        color: #ffffff;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      input[type="reset"]:hover {
+        background-color: #ff5555;
+      }
+    </style>
+  </head>
+  <body>
+    <script language="JavaScript" src="BAB 5_2.js"></script>
+
+    <form name="fform">
+      <h1>Perhitungan Bunga</h1>
+      <h3>Data Input :</h3>
+      <pre>
+Saldo               : <input type="text" size="20" name="saldo">
+Bunga               : <input type="text" size="3" name="bunga">%
+Waktu               : <input type="text" size="3" name="waktu">Bulan
+            </pre>
+      <input type="button" value="Submit" onclick="hitung()" />
+      <input type="reset" value="Reset" />
+      <pre>
+Hasil Perhitungan   : <br><textarea name="okomentar" rows="5" cols="50"></textarea>
+            </pre>
+    </form>
+  </body>
+</html>

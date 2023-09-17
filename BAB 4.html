@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Latihan BAB 4</title>
+
+        <style>
+            body {
+                background-color: azure;
+            }
+
+            input[type="button"] {
+                background-color: #008CBA;
+                color: #FFFFFF;
+                border: none;
+                border-radius: 20px;
+                padding: 10px 20px;
+                cursor: pointer;
+                margin-right: 10px;
+                transition: background-color 0.3s;
+            }
+        
+            input[type="button"]:hover {
+                background-color: #005A80;
+            }
+
+            input[type="reset"] {
+                background-color: #FF0000;
+                color: #FFFFFF;
+                border: none;
+                border-radius: 20px;
+                padding: 10px 20px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            input[type="reset"]:hover {
+                background-color: #FF5555;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <script language="JavaScript" src="BAB 4.js"></script>
+
+        <FORM NAME ="fform">
+<table border="1" align="center"width="70%">
+  <tr>
+    <td width="100%" colspan="2"><H2 ALIGN="center">Travel Bintang Abadi</H2></td>
+  </tr>
+  <tr>
+    <td width="50%"><PRE>
+Nama         :<input type="text" size="20" name="inama">
+Tujuan       :<select name="itujuan" size=1>
+                 <option value="Jakarta">Jakarta</option>
+                 <option value="Solo">Solo</option>
+                 <option value="Surabaya">Surabaya</option>
+              </select> 
+Kelas        :<select name="ikelas" size=1>
+                <option value="Eksklusif">Eksklusif</option>
+                <option value="Bisnis">Bisnis</option>
+                <option value="Ekonomi">Ekonomi</option>
+             </select>   
+Jumlah Tiket :<input type="text" size="11" name="ijumlah">
+Member       :<input type="checkbox" name="imember">Ya</td></pre>
+    <td width="50%"><pre>
+Harga Tiket  :<input type="text" size="10" name="otiket">
+Sub Total    :<input type="text" size="10" name="osub">
+Diskon       :<input type="text" size="10" name="odiskon">
+Total Bayar  :<input type="text" size="10" name="ototal"></td><pre>
+  </tr>
+  <tr>
+    <td width="100%" colspan="2">
+    <center>
+	<INPUT TYPE="button" value="Hitung" onclick="hitungtotal()">
+	<INPUT TYPE="reset" value="Ulang"> 
+    </center></td>
+  </tr>
+</table>
+</FORM>
+
+
+    </body>
+</html>
